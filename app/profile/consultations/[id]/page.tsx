@@ -1,5 +1,7 @@
 "use client"
 
+export const runtime = "edge";
+
 import { ArrowLeft, Send, Star, Clock, CheckCircle2 } from "lucide-react"
 import Link from "next/link"
 import { useState, use } from "react"
