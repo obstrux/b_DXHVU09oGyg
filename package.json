@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "pages:build": "npx @cloudflare/next-on-pages",
+    "pages:build": "next build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "deploy": "pnpm run pages:build && npx wrangler pages deploy ./out"
   },
   "dependencies": {
     "@arco-design/web-react": "^2.66.14",
